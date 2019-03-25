@@ -33,11 +33,11 @@ open class FPNTextField: UITextField, FPNCountryPickerDelegate, FPNDelegate {
 		return CGSize(width: width, height: height)
 	}
 
-	private var phoneCodeTextField: UITextField = UITextField()
+	open var phoneCodeTextField: UITextField = UITextField()
     open lazy var countryPicker: FPNCountryPicker = FPNCountryPicker()
 	private lazy var phoneUtil: NBPhoneNumberUtil = NBPhoneNumberUtil()
 	private var nbPhoneNumber: NBPhoneNumber?
-	private var formatter: NBAsYouTypeFormatter?
+	open var formatter: NBAsYouTypeFormatter?
 
 	public var flagButton: UIButton = UIButton()
 
