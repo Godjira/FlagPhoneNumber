@@ -34,7 +34,7 @@ open class FPNTextField: UITextField, FPNCountryPickerDelegate, FPNDelegate {
 	}
 
 	private var phoneCodeTextField: UITextField = UITextField()
-    lazy var countryPicker: FPNCountryPicker = FPNCountryPicker()
+    open lazy var countryPicker: FPNCountryPicker = FPNCountryPicker()
 	private lazy var phoneUtil: NBPhoneNumberUtil = NBPhoneNumberUtil()
 	private var nbPhoneNumber: NBPhoneNumber?
 	private var formatter: NBAsYouTypeFormatter?
